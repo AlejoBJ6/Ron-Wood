@@ -34,6 +34,61 @@ h1 {
   text-align: center;
 }
 
+/* Estilos para el formulario profesional y alineado a la izquierda */
+.form-container {
+  background: var(--card-bg);
+  padding: 2.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  max-width: 370px;
+  width: 100%;
+  margin-top: 6vh;
+  margin-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--text-light);
+  font-weight: 700;
+  font-size: 1.5em;
+  text-shadow: 2px 2px 8px #0006;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-container label {
+  color: var(--accent);
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 1em 1em;
+  border-radius: 10px;
+  border: 1.5px solid #a13a3a;
+  background: #2c181b;
+  color: var(--text-light);
+  font-size: 1.05em;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px #0002;
+}
+
+input:focus {
+  border-color: var(--accent);
+  outline: none;
+  box-shadow: 0 0 0 2px #e94f4f44;
+}
+
 button {
   width: 100%;
   border-radius: 10px;
@@ -56,46 +111,6 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
-
-.form-container {
-  background: var(--card-bg);
-  padding: 2.5rem 2.5rem 2rem 2.5rem;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  max-width: 370px;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-}
-
-input[type="text"],
-input[type="number"] {
-  width: 100%;
-  padding: 0.8em 1em;
-  border-radius: 10px;
-  border: 1.5px solid #a13a3a;
-  background: #2c181b;
-  color: var(--text-light);
-  font-size: 1.05em;
-  transition: border-color 0.2s, box-shadow 0.2s;
-  box-shadow: 0 2px 8px #0002;
-}
-
-input:focus {
-  border-color: var(--accent);
-  outline: none;
-  box-shadow: 0 0 0 2px #e94f4f44;
-}
-
-label {
-  font-weight: 500;
-  color: var(--accent);
-  margin-bottom: 0.3rem;
-  display: block;
-  font-size: 1em;
 }
 
 @media (max-width: 600px) {
